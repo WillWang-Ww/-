@@ -1,0 +1,16 @@
+*{margin: 0;padding: 0;}
+*{box-sizing: border-box;}
+
+.window{
+    height: 450px;
+    width: 600px;
+    margin: 0px auto;
+    overflow: hidden;
+}
+.slides{
+    display: flex;
+    transition: all 1s;
+}
+#buttonWrapper{
+   text-align: center;
+}
