@@ -1,25 +1,48 @@
 <!DOCTYPE html>
 <html lang="zh-Hans">
+
 <head>
     <meta charset="UTF-8">
     <link rel="stylesheet" href="./style.css">
     <title>Slides</title>
 </head>
+
 <body>
-    <div class="window" id="window">
-        <div class="slides" id="slides">
-            <img src="./images/macbook1.jpg" alt="macbook1" width="600px" height="450px">
-            <img src="./images/macbook2.jpg" alt="macbook2" width="600px" height="450px">
-            <img src="./images/macbook3.jpg" alt="mackbook3" width="600px" height="450px">
+    <main>
+        <div id="main">
+            <h1 class="title">Apple-like Gallery</h1>
+            <h2 class="introduce">Slideshow</h2>
+            <p id="codePage">View the <a href="https://github.com/WillWang-Ww/slides-AppleStyle">original tutorial
+                    >></a>
+            </p>
+            <div class="window" id="window">
+                <div class="slides" id="slides">
+                    <img src="./images/macbook.jpg" alt="macbook1" width="920px" height="400px">
+                    <img src="./images/iphone.jpg" alt="macbook2" width="920px" height="400px">
+                    <img src="./images/imac.jpg" alt="mackbook3" width="920px" height="400px">
+                    <img src="./images/info.jpg" alt="mackbook3" width="920px" height="400px">
+                </div>
+                <div id="buttonWrapper">
+                    <span id="right"></span>
+                    <button class="button">1</button>
+                    <button class="button">2</button>
+                    <button class="button">3</button>
+                    <button class="button">4</button>
+                    <span id="left"></span>
+                </div>
+            </div>
+            <p id="codeInfo">This is a tutoriazine demo.View the <a
+                    href="https://github.com/WillWang-Ww/slides-AppleStyle">original tutorial</a> to read and download
+                the source files.</p>
+            <footer>The gallery features artwork from <a href="www.google.com">rambocre pickupjojo</a>and <a
+                    href="www.google.com">codenamebender</a></footer>
         </div>
-    </div>
-    <div id="buttonWrapper">
-        <button>1</button>
-        <button>2</button>
-        <button>3</button>
-    </div>
+    </main>
+
+
     <script src="./jquery-3.4.1.js"></script>
     <script src="./main.js"></script>
-    
+
 </body>
+
 </html>

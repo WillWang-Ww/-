@@ -1,16 +1,60 @@
 *{margin: 0;padding: 0;}
 *{box-sizing: border-box;}
+button{outline: none;}
 
+#main{
+    text-align: center;
+    background-color: #f2f2f2;
+    height: 100vh;
+}
+.title{
+    padding-top: 60px;
+    font-size: 40px;
+    color: #444444;
+    font-weight: normal;
+    padding-bottom: 7px;
+}
+.introduce{
+    font-size: 40px;
+    color: #444444;
+    font-weight: bold;
+}
+#codePage{
+    padding: 20px;
+}
+a{
+    color:#0196e3;
+}
 .window{
     height: 450px;
-    width: 600px;
+    width: 920px;
     margin: 0px auto;
     overflow: hidden;
+    box-shadow: 0px 0px 2px 2px #dcdcdc;
+    background-color: white;
 }
 .slides{
     display: flex;
     transition: all 1s;
 }
 #buttonWrapper{
-   text-align: center;
+    height: 50px;
+    background-color: white;
+    bottom: 0;
+}
+.button{
+    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f6f6+0,ececec+100 */
+background: #f6f6f6; /* Old browsers */
+background: -moz-linear-gradient(top,  #f6f6f6 0%, #ececec 100%); /* FF3.6-15 */
+background: -webkit-linear-gradient(top,  #f6f6f6 0%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
+background: linear-gradient(to bottom,  #f6f6f6 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
+
+    height: 50px;
+    width: 60px;
+    border-style: none;
+}
+#buttonWrapper > span{
+   border: 1px solid red;
+   width: 358px;
 }
