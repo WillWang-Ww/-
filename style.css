@@ -54,7 +54,7 @@ a{
     margin-left: 2px;
     margin-right: 2px;
     background: linear-gradient(to bottom, #fafafa 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    box-shadow: 0px -1px 1px 1px #dcdcdc;
+    box-shadow: 0px -1px 1px 1px rgba(224, 224, 224, 0.5);;
     position: relative;
 }
 #right{
@@ -63,7 +63,7 @@ a{
     margin-left: 2px;
     margin-right: 2px;
     background: linear-gradient(to bottom, #fafafa 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    box-shadow: 0px -1px 1px 1px #e0e0e0;
+    box-shadow: 0px -1px 1px 1px rgba(224, 224, 224, 0.5);;
     z-index: 1;
 }
 #left{
@@ -72,7 +72,7 @@ a{
     margin-left: 2px;
     margin-right: 2px;
     background: linear-gradient(to bottom, #fafafa 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    box-shadow: 0px -1px 1px 1px #e0e0e0;
+    box-shadow: 0px -1px 1px 1px rgba(224, 224, 224, 0.5);;
     z-index: 1;
 }
 .button > img{
@@ -87,9 +87,8 @@ a{
     height: 50px;
     border-style: none;
     flex-grow: 1;
-    border:1px solid white;
     background: linear-gradient(to bottom, #f7f7f7 0%,#f3f3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-    box-shadow: 0px -1px 1px 1px #e0e0e0;
+    box-shadow: 0px -1px 1px 1px rgba(224, 224, 224, 0.5);
     position: relative;
 }
 #codeInfo{
@@ -101,5 +100,16 @@ footer{
     font-size: 12px;
 }
 .active{
-    box-shadow: 0px -1px 1px 1px #dcdcdc,inset 0px 0px 10px 5px #c8c8c8;
+    box-shadow: 0px -1px 1px 1px #dcdcdc,inset 0px 0px 10px 7px #c8c8c8;
+}
+.triangle{
+    position: absolute;
+    top: -3px;
+    left:18px;
+    width: 0;
+    height: 0;
+    border-left: 11px solid transparent;
+    border-right: 11px solid transparent;
+    border-top: 11px solid white;
+    display: none;
 }
