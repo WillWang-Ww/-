@@ -24,6 +24,7 @@ button{outline: none;}
 }
 a{
     color:#0196e3;
+    text-decoration: none;
 }
 .window{
     height: 450px;
@@ -35,26 +36,70 @@ a{
 }
 .slides{
     display: flex;
-    transition: all 1s;
+    transition: all 0.5s;
 }
 #buttonWrapper{
     height: 50px;
     background-color: white;
     bottom: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: nowrap;
 }
 .button{
-    /* Permalink - use to edit and share this gradient: https://colorzilla.com/gradient-editor/#f6f6f6+0,ececec+100 */
-background: #f6f6f6; /* Old browsers */
-background: -moz-linear-gradient(top,  #f6f6f6 0%, #ececec 100%); /* FF3.6-15 */
-background: -webkit-linear-gradient(top,  #f6f6f6 0%,#ececec 100%); /* Chrome10-25,Safari5.1-6 */
-background: linear-gradient(to bottom,  #f6f6f6 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
-filter: progid:DXImageTransform.Microsoft.gradient( startColorstr='#f6f6f6', endColorstr='#ececec',GradientType=0 ); /* IE6-9 */
-
     height: 50px;
-    width: 60px;
     border-style: none;
+    flex-grow: 1;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: linear-gradient(to bottom, #fafafa 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 0px -1px 1px 1px #dcdcdc;
+    position: relative;
 }
-#buttonWrapper > span{
-   border: 1px solid red;
-   width: 358px;
+#right{
+    height: 50px;
+    flex-grow: 6;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: linear-gradient(to bottom, #fafafa 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 0px -1px 1px 1px #e0e0e0;
+    z-index: 1;
+}
+#left{
+    height: 50px;
+    flex-grow: 6;
+    margin-left: 2px;
+    margin-right: 2px;
+    background: linear-gradient(to bottom, #fafafa 0%,#ececec 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 0px -1px 1px 1px #e0e0e0;
+    z-index: 1;
+}
+.button > img{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    margin: auto;
+}
+.hover{
+    height: 50px;
+    border-style: none;
+    flex-grow: 1;
+    border:1px solid white;
+    background: linear-gradient(to bottom, #f7f7f7 0%,#f3f3f3 100%); /* W3C, IE10+, FF16+, Chrome26+, Opera12+, Safari7+ */
+    box-shadow: 0px -1px 1px 1px #e0e0e0;
+    position: relative;
+}
+#codeInfo{
+    padding-top: 30px;
+    font-size: 16px;
+    padding-bottom: 20px;
+}
+footer{
+    font-size: 12px;
+}
+.active{
+    box-shadow: 0px -1px 1px 1px #dcdcdc,inset 0px 0px 10px 5px #c8c8c8;
 }

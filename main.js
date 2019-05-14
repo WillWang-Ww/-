@@ -1,4 +1,4 @@
-let $buttons = $('#buttonWrapper>button')
+let $buttons = $('#buttonWrapper > .button')
 let $slides = $('#slides')
 let $images = $slides.children('img')
 let $firstcopy = $images.eq(0).clone(true)
@@ -11,6 +11,11 @@ $slides.css({transform:'translateX(-920px)'})
 let current = 0
 
 $buttons.eq(0).on('click',function(){
+    $buttons.eq(1).removeClass('active')
+    $buttons.eq(2).removeClass('active')
+    $buttons.eq(3).removeClass('active')
+    $buttons.eq(0).removeClass('hover')
+    $buttons.eq(0).addClass('active')
     if(current === 3){
         $slides.css({transform:'translateX(-4600px)'})
             .one('transitionend',function(){
@@ -26,18 +31,31 @@ $buttons.eq(0).on('click',function(){
 })
 
 $buttons.eq(1).on('click',function(){
-    
+    $buttons.eq(0).removeClass('active')
+    $buttons.eq(2).removeClass('active')
+    $buttons.eq(3).removeClass('active')
+    $buttons.eq(1).removeClass('hover')
+    $buttons.eq(1).addClass('active')
     $slides.css({transform:'translateX(-1840px)'})
     current = 1
 })
 
 $buttons.eq(2).on('click',function(){
-    
+    $buttons.eq(1).removeClass('active')
+    $buttons.eq(0).removeClass('active')
+    $buttons.eq(3).removeClass('active')
+    $buttons.eq(2).removeClass('hover')
+    $buttons.eq(2).addClass('active')
     $slides.css({transform:'translateX(-2760px)'})
     current = 2
 })
 
 $buttons.eq(3).on('click',function(){
+    $buttons.eq(1).removeClass('active')
+    $buttons.eq(2).removeClass('active')
+    $buttons.eq(0).removeClass('active')
+    $buttons.eq(3).removeClass('hover')
+    $buttons.eq(3).addClass('active')
     if(current === 0){
         $slides.css({transform:'translateX(0px)'})
             .one('transitionend',function(){
@@ -52,3 +70,27 @@ $buttons.eq(3).on('click',function(){
     current = 3
 })
 
+$buttons.eq(0).mouseenter(function(){
+    $buttons.eq(0).addClass('hover')
+})
+$buttons.eq(0).mouseleave(function(){
+    $buttons.eq(0).removeClass('hover')
+})
+$buttons.eq(1).mouseenter(function(){
+    $buttons.eq(1).addClass('hover')
+})
+$buttons.eq(1).mouseleave(function(){
+    $buttons.eq(1).removeClass('hover')
+})
+$buttons.eq(2).mouseenter(function(){
+    $buttons.eq(2).addClass('hover')
+})
+$buttons.eq(2).mouseleave(function(){
+    $buttons.eq(2).removeClass('hover')
+})
+$buttons.eq(3).mouseenter(function(){
+    $buttons.eq(3).addClass('hover')
+})
+$buttons.eq(3).mouseleave(function(){
+    $buttons.eq(3).removeClass('hover')
+})
